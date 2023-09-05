@@ -261,6 +261,13 @@ docker run --name chatgpt-web -d -p 3002:3002 -e OPENAI_API_BASE_URL=https://ope
 你需要在各种用到 OpenAI API 的地方设置 API Base 为你的 One API 的部署地址，例如：`https://openai.justsong.cn`，API Key 则为你在 One API 中生成的令牌。
 
 注意，具体的 API Base 的格式取决于你所使用的客户端。
+### OpenAI的python客户端请求方式
+
+```bash
+OPENAI_API_KEY="sk-xxxxx"
+OPENAI_API_BASE="http://<HOST>:<PORT>/v1"  
+```
+
 
 ```mermaid
 graph LR
